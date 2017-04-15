@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HelloWorld.MainPage">
 	<ContentPage.Content>
 		<StackLayout Padding="30">
-			<Label Text="Contact Name" Font="30" HorizontalOptions="Center" TextColor="Blue"/>
+			<Label Text="Display Person" Font="30" HorizontalOptions="Center" TextColor="Blue"/>
 			<StackLayout Orientation="Horizontal">
 				<Label Text="Name: " />
 				<Label Text="{Binding FullName}" Font="14" TextColor="Green" />
@@ -19,7 +19,7 @@
 				</StackLayout>	
 				
 			<StackLayout>
-				<Button Text="Go to Page 2" Clicked="OnButtonClick" HorizontalOptions="Center"/>
+				<Button Text="Go to Page 2" Font="20" Clicked="OnButtonClick" HorizontalOptions="Center"/>
 			
 				</StackLayout>
 			</StackLayout>

@@ -7,22 +7,14 @@ namespace HelloWorld
 {
 	public partial class MainPage : ContentPage
 	{
+		MainPageViewModel vm;
+
 		public MainPage()
 		{
-			Person paschal = Init();
-			BindingContext = paschal;
+			Person per = MainPageViewModel.GetPerson();
+			vm = new MainPageViewModel(per);
+			BindingContext = vm;
 			InitializeComponent();
-		}
-
-		private Person Init()
-		{
-			return new Person
-			{
-				FullName = "Paschal Ihenacho",
-				Phone = "(832) 641-2011",
-				Email = "ihenachopaschal@yahoo.com"
-			};
-
 		}
 
 		public void OnButtonClick(object o, EventArgs e)
