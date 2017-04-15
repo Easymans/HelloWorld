@@ -11,5 +11,9 @@ namespace HelloWorld
 		{
 			InitializeComponent();
 		}
+		public void OnButtonClick(object o, EventArgs e)
+		{
+			Navigation.PushAsync(new Page2());
+		}
 	}
 }

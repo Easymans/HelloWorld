@@ -7,7 +7,10 @@
 				<Label Text="Deliver to: " />
 				<Entry Placeholder="First Name" />
 				<Entry Placeholder="Last Name" />
-			</StackLayout>
-		</StackLayout>
+				</StackLayout>
+			<StackLayout Padding="30">
+				<Button Text="Click me to go to page 2" Clicked="OnButtonClick" HorizontalOptions="Center"/>
+				</StackLayout>
+				</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
