@@ -31,5 +31,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Person.cs" />
   </ItemGroup>
 </Project>
